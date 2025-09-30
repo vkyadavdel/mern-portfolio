@@ -4,6 +4,8 @@ import "./Menus.css";
 // import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
 import { Zoom, Fade } from "react-awesome-reveal";
+import profilePic from "../../assets/docs/vikasphoto.jpg";
+
 
 import {
   FcAbout,
@@ -21,10 +23,11 @@ const Menus = ({ toggle }) => {
         <>
           <Zoom>
             <div className="navbar-profile-pic">
-              <img
+              {/* <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
                 alt="profile pic"
-              />
+              /> */}
+              <img src={profilePic} alt="profile pic" />
             </div>
           </Zoom>
           <Fade left>
